@@ -6,7 +6,7 @@ import {
   PaperClipIcon,
   ArrowUpIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../assets/logo.svg";
+import logo from "../assets/Logo.svg";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
