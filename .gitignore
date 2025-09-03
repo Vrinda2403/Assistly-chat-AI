@@ -1,5 +1,7 @@
 # Node modules
 node_modules/
+frontend/node_modules/
+backend/node_modules/
 
 # Logs
 npm-debug.log*
@@ -7,21 +9,17 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
 
 # Build outputs
 build/
 dist/
 
-# Dependency directories
-/frontend/node_modules/
- /backend/node_modules/
-
-# Lock files (optional; if you want npm to manage package versions via package-lock.json, keep it)
+# Lock files (optional)
 package-lock.json
 yarn.lock
 
@@ -33,6 +31,6 @@ yarn.lock
 *.njsproj
 *.sln
 
-# OS files
+# OS-specific files
 .DS_Store
 Thumbs.db
