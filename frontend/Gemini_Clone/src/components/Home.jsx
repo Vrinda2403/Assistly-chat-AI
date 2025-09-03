@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
-import Prompts from "./prompts";
+import Prompts from "./Prompts";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
