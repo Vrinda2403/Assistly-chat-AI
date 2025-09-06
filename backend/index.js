@@ -30,6 +30,4 @@ app.use("/api/vl/user",userRoutes)
 app.use("/api/vl/gemini",promptRoutes)
 
 
-app.listen(port ,()=>{
-    console.log(`Server is running on ${port}`);
-})
+export default app;

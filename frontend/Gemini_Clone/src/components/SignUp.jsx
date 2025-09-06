@@ -34,15 +34,14 @@ const SignUp = () => {
         setError("")
         setLoad(true)
         try {
-            const data=await axios.post("http://localhost:5000/api/vl/user/signup",{
-                firstName:form.firstName,
-                lastName:form.lastName,
-                email:form.email,
-                password:form.password
-            },
-        {
-            withCredentials:true,
-        });
+            const data = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/vl/user/signup`, {
+    firstName: form.firstName,
+    lastName: form.lastName,
+    email: form.email,
+    password: form.password
+}, {
+    withCredentials: true,
+});
 
             alert(data.message ||"signUp Succedded")
             navigate("/login")

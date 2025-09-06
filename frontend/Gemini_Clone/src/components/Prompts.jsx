@@ -38,13 +38,12 @@ const Prompts = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.post(
-        "http://localhost:5000/api/vl/gemini/prompt",
-        { content: trimmed },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/vl/gemini/prompt`, {
+    content: trimmed,
+}, {
+    headers: {
+        Authorization: `Bearer ${token}`
+    },
           withCredentials: true,
         }
       );

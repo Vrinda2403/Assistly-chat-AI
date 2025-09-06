@@ -33,12 +33,12 @@ const Login = () => {
   setError("");
   setLoad(true);
   try {
-    const res = await axios.post("http://localhost:5000/api/vl/user/login", {
-      email: form.email,
-      password: form.password
-    }, {
-      withCredentials: true,
-    });
+   const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/vl/user/login`, {
+  email: form.email,
+  password: form.password
+}, {
+  withCredentials: true,
+});
 
     console.log("Full response:", res.data);
 
