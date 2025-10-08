@@ -106,6 +106,8 @@ If you’d like to contribute:
 - Commit changes (git commit -m "Add new feature")
 - Push to branch (git push origin feature-name)
 - Open a pull request 🎉
+```
 │ ├── eslint.config.js # Linting setup for code quality
 │ ├── vercel.json # Deployment configuration for Vercel
 │ └── README.md
+```
