@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, setIsOpen, setCurrentChat }) => {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/vl/user/logout", { withCredentials: true });
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/vl/user/logout`, { withCredentials: true });
       localStorage.removeItem("user");
       localStorage.removeItem("token");
       setAuthUser(null);

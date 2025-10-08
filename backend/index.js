@@ -29,5 +29,7 @@ app.use(
 app.use("/api/vl/user",userRoutes)
 app.use("/api/vl/gemini",promptRoutes)
 
-
+app.get("/", (req, res) => {
+    res.send("Backend is running!");
+});
 export default app;
